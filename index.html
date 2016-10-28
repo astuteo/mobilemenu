@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Mobile Menu CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="./css/mobilemenu.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$(".nav-button").click(function () {
+			$(".nav-button,.primary-nav").toggleClass("open");
+			});    
+		});
+		</script>
+	</head>
+
+	<body>
+
+		<h1>Mobile Dropdown Retrofit</h1>
+
+		<small><a href="http://astuteo.com">Created by Astuteo</a></small>
+
+		<p>Trying to tweak a website for mobile responsiveness, but the main menu is a pesky unordered list dropdown?</p>
+
+		<p>With some careful design consideration, jQuery, and the wide array of frameworks available, you could spend your time re-envisioning the site and really design something <strong>AMAZING</strong>. Or you could just rip the menu out of the page flow, glue it to the top of the viewport, and still have room left over for that annoying search bar.</p> 
+
+		<p>It ain't rocketry, but it works. Check out this page on your mobile device (or just resize this window) to see it in action.</p>
+
+		<button class="nav-button">Toggle Navigation</button>
+
+		<ul class="primary-nav">
+			<li><a href="#">Home</a></li>
+			<li class="parent"><a href="#">About Us</a>
+				<ul>
+					<li><a href="#">Our History</a></li>
+					<li><a href="#">Latest News</a></li>
+					<li><a href="#">Community Involvement</a></li>
+					<li><a href="#">Job Opportunities</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+	</body>
+
+</html>
